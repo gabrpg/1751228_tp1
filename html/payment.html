@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phuzzler</title>
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+<header>
+    <div class="logo"><a href="accueil.html"><img src="../Background/LogoFinal.png" alt ="Phuzzler" height="120" width="200"/></a></div>
+</header>
+<main>
+    <div class="container">
+        <h1 class ="title">Paiement</h1>
+        <form class ="payment" action="#" method="POST">
+            <input type="text" placeholder="Nom sur la carte de crédit" class="field" title="Obligatoire" required>
+            <input type="text" placeholder="Numéro ex.:1111-2222-3333-4444" class="field" maxlength="19" minlength="16" title="Entrer un numéro de carte valide" required>
+            <input type="text" placeholder="CVC" class="field" maxlength="3" minlength="3" title="Entrer un CVC valide" required>
+            <input type="text" placeholder="Mois d'expiration" class="field" maxlength="2" minlength="1" title="Entrer un mois valide" required>
+            <input type="text" placeholder="Année d'expiration" class="field" maxlength="4" minlength="4" title="Entrer un année valide" required>
+            <input type="submit" value="Payer" class="btn">
+        </form>
+        <div class="retour">
+            <a href="jeu.html">Annuler la transaction</a>
+        </div>
+    </div>
+    <div><img id="copyright" src="../Background/All_rights_reserved_logo.png" alt="copyright" height="20" width="20"/></div>
+</main>
+</body>
+</html>

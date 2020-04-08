@@ -1,0 +1,115 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("../Background/brick.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+}
+
+#page-nav {
+    width: 100%;
+    text-align: right;
+}
+
+#page-nav label, #hamburger {
+    display: none;
+
+}
+
+#page-nav ul li {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#page-nav ul li a {
+    color: #000000;
+    font-size: 20px;
+    font-family: "Arial Black";
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    #page-nav{
+        position: absolute;
+        margin-left: -15px;
+    }
+
+    #page-nav label {
+        display: inline-block;
+        color: #fff;
+        background: #000000;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #page-nav ul li {
+        display: block;
+        margin-left: 37.5%;
+    }
+
+    #page-nav ul li {
+
+        border-top: 1px solid #333333;
+        background-color: #ffffff;
+        text-align: left;
+    }
+
+    #page-nav ul {
+        display: none;
+    }
+
+    #page-nav input:checked ~ ul {
+        display: block;
+    }
+}
+
+.transbox {
+    border-radius: 50px;
+    margin: 2.5%;
+    background-color: rgba(0,0,0,.4);
+    border: 5px solid black;
+}
+
+.transbox p {
+
+    font-family: "Arial Black";
+    margin: 5%;
+    color: #000000;
+}
+
+Button {
+    font-family: "Arial Black";
+    font-size: 40px;
+    padding: 30px 30px;
+    border-radius: 50px;
+    color: #ffffff;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+    background-color: #000000;
+    transition: background-color 0.5s ease-out;
+    margin-left: 25%;
+}
+
+button:focus {outline:0;}
+
+button:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 1%;
+}

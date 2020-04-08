@@ -1,0 +1,103 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-image: url("../Background/brick.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+}
+
+main{
+    display: flex;
+}
+
+footer{
+    display: flex;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.image{
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+#trash{
+
+    right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.container{
+    border: 10px solid black;
+    margin: auto;
+    padding: 10px;
+    width: 700px;
+    height: 325px;
+}
+
+.valide{
+    text-align: center;
+}
+
+.reponse{
+    margin:auto;
+    width: 200px;
+    height: 100px;
+}
+
+input{
+    padding: 8px 0;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    text-align: center;
+    width: 90%;
+    font-size: 16px;
+    transition: border .2s, background-color .2s;
+}
+
+.field:valid{
+    border-color: #008000;
+}
+
+.valide .field:focus {
+    border: 2px solid #3498DB;
+
+}
+
+.valide .btn{
+    font-family: "Arial Black";
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.valide .btn:focus{outline: 0;}
+
+.valide .btn:hover,.in{
+    background-color: #fff;
+    color: #000;
+}
+
+#copyright{
+    position: absolute;
+    bottom: 1%;
+    left: 0.5%;
+}
